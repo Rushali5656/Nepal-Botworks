@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Nepal-Botworks/static/css/main.bda3cf3d.css",
-    "main.js": "/Nepal-Botworks/static/js/main.019a60dc.js",
+    "main.css": "/Nepal-Botworks/static/css/main.030ce723.css",
+    "main.js": "/Nepal-Botworks/static/js/main.87868faf.js",
     "static/media/rus.png": "/Nepal-Botworks/static/media/rus.dacd23cc44abb8ffd17a.png",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Nepal-Botworks/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/Nepal-Botworks/static/media/fontawesome-webfont.6878d55e3615ccf40c38.svg",
     "static/media/Greeland1.jpg": "/Nepal-Botworks/static/media/Greeland1.cf3d0876076759881ab3.jpg",
     "static/media/Greenland5.jpg": "/Nepal-Botworks/static/media/Greenland5.93cdc87b4d0142f482a8.jpg",
     "static/media/Greenland2.jpg": "/Nepal-Botworks/static/media/Greenland2.e221c3ed656df9724e9a.jpg",
@@ -28,7 +28,7 @@
     "static/media/deen.png": "/Nepal-Botworks/static/media/deen.d30d2da19fd6cbd90eed.png",
     "static/media/Bal Uddhar2.jpg": "/Nepal-Botworks/static/media/Bal Uddhar2.3efb269bccbd43574036.jpg",
     "static/media/landing1.jpg": "/Nepal-Botworks/static/media/landing1.3efb269bccbd43574036.jpg",
-    "static/media/nucleo-icons.svg": "/Nepal-Botworks/static/media/nucleo-icons.01ebecaf50461162d4bc.svg",
+    "static/media/nucleo-icons.svg": "/Nepal-Botworks/static/media/nucleo-icons.95fa360c1c73431a0f9a.svg",
     "static/media/team-4-800x800.jpg": "/Nepal-Botworks/static/media/team-4-800x800.99c612eb60728a5aeeb0.jpg",
     "static/media/Littlemoon.jpg": "/Nepal-Botworks/static/media/Littlemoon.c574036468c56aeb3672.jpg",
     "static/media/sangam.jpg": "/Nepal-Botworks/static/media/sangam.ff73b6e32de0c27017b2.jpg",
@@ -54,12 +54,12 @@
     "static/media/internet-of-things.png": "/Nepal-Botworks/static/media/internet-of-things.22ac9f641bac7869e9a8.png",
     "static/media/nucleo-icons.woff": "/Nepal-Botworks/static/media/nucleo-icons.c82c9b7c40130b7116d3.woff",
     "static/media/nucleo-icons.woff2": "/Nepal-Botworks/static/media/nucleo-icons.cba267483aa6a7cb6e33.woff2",
-    "static/media/google.svg": "/Nepal-Botworks/static/media/google.eae9aa9354350126d1b032847835a051.svg",
-    "static/media/github.svg": "/Nepal-Botworks/static/media/github.6c95555646a0ecabf549179c97bf0e7d.svg",
+    "static/media/google.svg": "/Nepal-Botworks/static/media/google.952443d790ba00a03a5e2b10397d3acd.svg",
+    "static/media/github.svg": "/Nepal-Botworks/static/media/github.f7165d3e2844ef758a22c6829f494e71.svg",
     "index.html": "/Nepal-Botworks/index.html"
   },
   "entrypoints": [
-    "static/css/main.bda3cf3d.css",
-    "static/js/main.019a60dc.js"
+    "static/css/main.030ce723.css",
+    "static/js/main.87868faf.js"
   ]
 }

@@ -50,19 +50,19 @@ function FAQ() {
               </h4>
 
               {/* <Input
-                type="textarea"
-                placeholder="Please Type Your Questions"
-                className="mb-3"
-              />
-              <div className="d-flex gap-2">
-                <button type="button" className="btn btn-danger rounded-pill">
-                  <i className="ri-mail-line me-2"></i> Send Question
-                </button>
-                <button type="button" className="btn btn-primary rounded-pill">
-                  <i className="ri-phone-line me-2"></i> Call Us at +977
-                  9861806265
-                </button>
-              </div> */}
+              type="textarea"
+              placeholder="Please Type Your Questions"
+              className="mb-3"
+            />
+            <div className="d-flex gap-2">
+              <button type="button" className="btn btn-danger rounded-pill">
+                <i className="ri-mail-line me-2"></i> Send Question
+              </button>
+              <button type="button" className="btn btn-primary rounded-pill">
+                <i className="ri-phone-line me-2"></i> Call Us at +977
+                9861806265
+              </button>
+            </div> */}
             </div>
           </Col>
         </Row>
@@ -82,11 +82,17 @@ function FAQ() {
                 </h6>
                 <Collapse isOpen={col1} className="accordion-collapse">
                   <div className="accordion-body">
-                    If several languages coalesce, the grammar of the resulting
-                    language is more simple and regular than that of the
-                    individual languages. The new common language will be more
-                    simple and regular than the existing European languages. It
-                    will be as simple as their most common words.
+                    Nepal Botworks is a prominent educational provider located
+                    in Liwali 8, Bhaktapur. It specializes in offering
+                    cutting-edge training and educational programs, likely
+                    focusing on technology, robotics, and innovation. Situated
+                    in the historical city of Bhaktapur, known for its rich
+                    cultural heritage and traditional architecture, Nepal
+                    Botworks leverages its location to provide a unique blend of
+                    modern education within a culturally rich environment. The
+                    institution aims to equip students with practical skills and
+                    knowledge in various technological fields, preparing them
+                    for the demands of the modern workforce.
                   </div>
                 </Collapse>
               </div>
@@ -103,11 +109,18 @@ function FAQ() {
                 </h6>
                 <Collapse isOpen={col2} className="accordion-collapse">
                   <div className="accordion-body">
-                    The new common language will be more simple and regular than
-                    the existing European languages. It will be as simple as
-                    Occidental; in fact, it will be Occidental. To an English
-                    person, it will seem like simplified English, as a skeptical
-                    Cambridge friend of mine told me what Occidental is.
+                    Nepal Botworks was established to advance technological
+                    education and innovation in Nepal, addressing the critical
+                    need for skilled professionals in fields such as robotics,
+                    automation, and technology. By offering specialized training
+                    and hands-on experience, it aims to equip students and
+                    professionals with industry-relevant skills, fostering a
+                    culture of innovation and enhancing employability. Nepal
+                    Botworks seeks to bridge the skill gaps in the Nepalese
+                    education system, promote STEM education, and contribute to
+                    the country's economic development by preparing a workforce
+                    capable of driving technological advancements and
+                    entrepreneurship.
                   </div>
                 </Collapse>
               </div>
@@ -124,12 +137,15 @@ function FAQ() {
                 </h6>
                 <Collapse isOpen={col3} className="accordion-collapse">
                   <div className="accordion-body">
-                    The wise man therefore always holds in these matters to this
-                    principle of selection: he rejects pleasures to secure other
-                    greater pleasures, or else he endures pains to avoid worse
-                    pains. But I must explain to you how all this mistaken idea
-                    of denouncing pleasure and praising pain was born and I will
-                    give you a complete.
+                    Nepal Botworks offers a diverse range of courses designed to
+                    equip students with cutting-edge skills in various
+                    technological fields. The courses include Robotics
+                    Education, Web Development, Coding Bootcamps, Drone
+                    Technology, and AI & Machine Learning. These programs are
+                    tailored to provide hands-on experience and practical
+                    knowledge, preparing students for the demands of the modern
+                    tech industry and fostering innovation and technological
+                    advancement in Nepal.
                   </div>
                 </Collapse>
               </div>
@@ -146,12 +162,15 @@ function FAQ() {
                 </h6>
                 <Collapse isOpen={col4} className="accordion-collapse">
                   <div className="accordion-body">
-                    Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices
-                    posuere cubilia Curae; In ac dui quis mi consectetuer
-                    lacinia. Nam pretium turpis et arcu arcu tortor, suscipit
-                    eget, imperdiet nec, imperdiet iaculis aliquam ultrices
-                    mauris.
+                    To contact Nepal Botworks for inquiries or more information,
+                    you can reach out to them at their office in Liwali 8,
+                    Bhaktapur. Typically, educational institutions provide
+                    contact details such as phone numbers, email addresses, or
+                    social media handles on their official website or
+                    promotional materials. If you have specific questions or
+                    need assistance regarding their courses, admissions, or any
+                    other related matters, contacting them directly through
+                    these channels would be the best approach.
                   </div>
                 </Collapse>
               </div>

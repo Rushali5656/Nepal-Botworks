@@ -1,0 +1,52 @@
+.blog-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: height 0.3s ease;
+  z-index: 1;
+}
+
+.blog-card:hover::after {
+  height: 100%;
+}
+
+.blog-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 320px) {
+  .blog-card::after {
+    height: 50%; /* Initial height of overlay on smaller screens */
+    transition: height 0.3s ease; /* Smooth transition for height change */
+  }
+
+  .blog-card:hover::after {
+    height: 100%; /* Fully cover the card on hover */
+  }
+}

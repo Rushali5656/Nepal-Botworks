@@ -35,6 +35,7 @@ import AboutPage from "NepalBotworks/AboutPage/AboutPage";
 import Contact from "NepalBotworks/Contact/Contact";
 import FAQ from "NepalBotworks/FAQ/FAQ";
 import Gallery from "NepalBotworks/Gallery/Gallery";
+import BlogPage from "NepalBotworks/Blog/Blog";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -53,6 +54,7 @@ root.render(
       <Route path="/gallery" exact element={<Gallery />} />
       <Route path="/contact" exact element={<Contact />} />
       <Route path="/faq" exact element={<FAQ />} />
+      <Route path="/blog" exact element={<BlogPage />} />
 
       <Route path="*" element={<Navigate to="/home" replace />} />
     </Routes>

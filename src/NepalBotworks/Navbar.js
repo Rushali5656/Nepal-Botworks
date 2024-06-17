@@ -8,6 +8,10 @@ import {
   Collapse,
   Nav,
   NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from "reactstrap";
 import Botwork from "../assets/img/crop.png";
 
@@ -25,7 +29,7 @@ function CustomNavbar() {
               src={Botwork}
               alt="Nepal Botworks"
               className="img-fluid"
-              style={{ height: "50px", width: "60px" }}
+              style={{ height: "50px", width: "50px" }}
             />
             <span className="text-heading fs-12">Nepal</span>{" "}
             <span className="text-red fs-12">Botworks</span>
@@ -75,14 +79,29 @@ function CustomNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink
-                to="/faq"
-                className="nav-link"
-                activeClassName="active"
-                onClick={() => setIsOpen(false)}
-              >
-                FAQ
-              </NavLink>
+              <Nav className="ml-auto" navbar>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Menu
+                  </DropdownToggle>
+                  <DropdownMenu left>
+                    <DropdownItem
+                      tag={Link}
+                      to="/blog"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Blog
+                    </DropdownItem>
+                    <DropdownItem
+                      tag={Link}
+                      to="/faq"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      FAQ
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </Nav>
             </NavItem>
           </Nav>
         </Collapse>

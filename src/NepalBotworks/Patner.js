@@ -4,6 +4,8 @@ import BESS from "../assets/img/BESS.jpeg";
 import Dirghayu from "../assets/img/New Dirghayu.jpeg";
 import Zenith from "../assets/img/Zenith.jpeg";
 import Littlemoon from "../assets/img/Littlemoon.jpg";
+import Greenland from "../assets/img/Greenland.jpg";
+import BalUdhhar from "../assets/img/Baluddar.jpg";
 import { motion } from "framer-motion";
 
 function Patner() {
@@ -33,7 +35,13 @@ function Patner() {
     {
       id: 5,
       title: "Greenland Secondary School",
-      // image: robot,
+      image: Greenland,
+    },
+    {
+      id: 8,
+      title: "Bal Uddhar Secondary School",
+      image: BalUdhhar,
+      link: "https://baluddhar.edu.np/?fbclid=IwZXh0bgNhZW0CMTAAAR1ym00KZXjh8IvvFIEtT15Pb4HT_vz2-92BgZGXawqSHM3LjNlJQooyFko_aem_ZmFrZWR1bW15MTZieXRlcw",
     },
   ];
   return (

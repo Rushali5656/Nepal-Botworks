@@ -47,7 +47,7 @@ const Gallery = () => {
       src: Greenland,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      title: "Working at a coffee shop",
+      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -57,7 +57,7 @@ const Gallery = () => {
       src: Greenland4,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      title: "Working at a coffee shop",
+      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -67,7 +67,7 @@ const Gallery = () => {
       src: Greenland1,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      title: "Working at a coffee shop",
+      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -77,7 +77,7 @@ const Gallery = () => {
       src: Greenland3,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      title: "Working at a coffee shop",
+      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -88,7 +88,7 @@ const Gallery = () => {
       src: BalUddhar,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      title: "Greenland Workshop discussion with team",
+      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
@@ -98,7 +98,7 @@ const Gallery = () => {
       src: BalUddhar1,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      title: "Greenland Workshop discussion with team",
+      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
@@ -108,7 +108,7 @@ const Gallery = () => {
       src: BalUddhar2,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      title: "Greenland Workshop discussion with team",
+      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
@@ -123,7 +123,7 @@ const Gallery = () => {
       link: "https://www.facebook.com/reel/438650282240506",
     },
     {
-      link: "https://www.facebook.com/reel/438650282240506",
+      link: "https://www.facebook.com/61557855965257/videos/439988118991364",
     },
   ];
 
@@ -280,13 +280,13 @@ const Gallery = () => {
                               src={src}
                               alt=""
                               onClick={() => openModal(src)}
-                              style={{ height: "350px" }}
+                              style={{ height: "300px" }}
                             />
-                            <div className="gallery-overlay">
+                            {/* <div className="gallery-overlay">
                               <h5 className="overlay-caption">
                                 <div className="text-center p-2">{title}</div>
                               </h5>
-                            </div>
+                            </div> */}
                           </Link>
                         </div>
                       </Card>
@@ -314,13 +314,13 @@ const Gallery = () => {
         size="xl"
         className="modal-dialog-centered"
       >
-        <ModalBody>
+        <ModalBody className="position-relative">
           <button
             type="button"
-            className="btn-close position-absolute top-0 end-0 m-3 mb-3"
+            className="btn-close position-absolute top-0 end-0 m-3"
             onClick={toggleModal}
           >
-            Back
+            <span aria-hidden="true">Back</span>
           </button>
           <img
             src={selectedImage}

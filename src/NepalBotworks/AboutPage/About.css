@@ -4,6 +4,10 @@
   font-weight: bold;
   font-size: 1.9rem;
 }
+.blogtext-heading {
+  color: #ff6347; /* Tomato color for headings */
+  font-size: 1.5rem;
+}
 
 .text-dark {
   color: #343a40; /* Dark grey text */

@@ -70,7 +70,10 @@ function LandingPage() {
   });
 
   const openForm = () => {
-    window.open("https://forms.gle/zbs3zpmjfmdAwM1QA", "_blank");
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLScF9Xgfsknne_WM-dIECyZ8HkoA3D1TTy6GBrwQ9uXimg3cZA/viewform",
+      "_blank"
+    );
   };
 
   return (

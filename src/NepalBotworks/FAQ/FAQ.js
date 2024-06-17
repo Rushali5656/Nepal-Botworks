@@ -3,6 +3,7 @@ import CustomNavbar from "NepalBotworks/Navbar";
 import React, { useState } from "react";
 import { Col, Collapse, Container, Input, Row } from "reactstrap";
 import "../FAQ/fas.css";
+import Breadcrumbs from "Common/BreadCrumbs";
 
 function FAQ() {
   const [col1, setcol1] = useState(true);
@@ -41,31 +42,10 @@ function FAQ() {
   return (
     <div>
       <CustomNavbar />
+      <Breadcrumbs
+        items={[{ title: "Home", link: "/home" }, { title: "FAQ" }]}
+      />
       <Container>
-        <Row>
-          <Col xxl={5} className="align-self-center">
-            <div className="py-4">
-              <h4 className="display-6 text-heading">
-                Frequently Asked Questions
-              </h4>
-
-              {/* <Input
-              type="textarea"
-              placeholder="Please Type Your Questions"
-              className="mb-3"
-            />
-            <div className="d-flex gap-2">
-              <button type="button" className="btn btn-danger rounded-pill">
-                <i className="ri-mail-line me-2"></i> Send Question
-              </button>
-              <button type="button" className="btn btn-primary rounded-pill">
-                <i className="ri-phone-line me-2"></i> Call Us at +977
-                9861806265
-              </button>
-            </div> */}
-            </div>
-          </Col>
-        </Row>
         <Col lg={12}>
           <div>
             <div className="accordion " id="genques-accordion">

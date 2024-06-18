@@ -28,7 +28,7 @@ function CustomNavbar() {
     <Navbar color="light" light expand="md" sticky="top">
       <Container>
         <NavbarBrand href="/">
-          <Link to="/">
+          <Link to="/home">
             <img
               src={Botwork}
               alt="Nepal Botworks"

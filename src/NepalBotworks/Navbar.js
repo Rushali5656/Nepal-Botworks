@@ -14,6 +14,10 @@ import {
   DropdownItem,
 } from "reactstrap";
 import Botwork from "../assets/img/crop.png";
+import fb from "../assets/img/fb.png";
+import linkin from "../assets/img/linkedin.png";
+import twitter from "../assets/img/twitter.png";
+import insta from "../assets/img/instagram.png";
 
 function CustomNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +33,7 @@ function CustomNavbar() {
               src={Botwork}
               alt="Nepal Botworks"
               className="img-fluid"
-              style={{ height: "50px", width: "50px" }}
+              style={{ height: "60px", width: "63px" }}
             />
             <span className="text-heading fs-12">Nepal</span>{" "}
             <span className="text-red fs-12">Botworks</span>
@@ -115,6 +119,60 @@ function CustomNavbar() {
                 </UncontrolledDropdown>
               </Nav>
             </NavItem>
+            <div className="info_social ms-2 mt-3">
+              <span className="mx-1">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61557855965257"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <img src={fb} alt="Facebook" className="social-icon-fb" />
+                </a>
+              </span>
+              <span className="mx-1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <img
+                    src={twitter}
+                    alt="Twitter"
+                    className="social-icon-twitter"
+                  />
+                </a>
+              </span>
+              <span className="mx-1">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <img
+                    src={linkin}
+                    alt="LinkedIn"
+                    className="social-icon-linkedin"
+                  />
+                </a>
+              </span>
+              <span className="mx-1">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  <img
+                    src={insta}
+                    alt="Instagram"
+                    className="social-icon-instagram"
+                  />
+                </a>
+              </span>
+            </div>
           </Nav>
         </Collapse>
       </Container>

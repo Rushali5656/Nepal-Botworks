@@ -358,3 +358,31 @@
     margin-left: 1rem !important;
   }
 }
+.social-icon-fb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #3b5998;
+  background-color: #3b5998;
+}
+.social-icon-twitter {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #1da1f2;
+  background-color: #1da1f2;
+}
+.social-icon-linkedin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0077b5;
+  border: 1px solid #0077b5;
+}
+.social-icon-instagram {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e4405f;
+  border: 1px solid #e4405f;
+}

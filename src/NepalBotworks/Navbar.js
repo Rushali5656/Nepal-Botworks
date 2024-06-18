@@ -38,6 +38,18 @@ function CustomNavbar() {
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+            {isOpen && (
+              <NavItem className="ml-auto">
+                <button
+                  class="navbar-toggler"
+                  id="navbar_global"
+                  onClick={toggleNavbar}
+                >
+                  <span></span>
+                  <span></span>
+                </button>
+              </NavItem>
+            )}
             <NavItem>
               <NavLink
                 to="/home"

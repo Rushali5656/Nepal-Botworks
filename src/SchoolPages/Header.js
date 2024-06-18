@@ -45,7 +45,7 @@ function Header() {
         <Navbar expand="md" light>
           <Row className="p-0">
             <NavbarBrand href="/home" className="nav p-3">
-              <img src="images/favicon.png" alt="" />
+              <img src="images/crop.png" alt="" />
             </NavbarBrand>
 
             <NavbarToggler onClick={toggle} />

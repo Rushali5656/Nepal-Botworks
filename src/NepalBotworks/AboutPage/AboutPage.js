@@ -33,9 +33,9 @@ function AboutPage() {
           className="d-block mt-0 img-fluid w-100"
           style={{ height: "auto", maxHeight: "400px", objectFit: "cover" }}
           alt="Description"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          whileInView={{ scale: 1 }}
+          initial={{ scale: 0 }}
+          transition={{ duration: 0.7 }}
         />
         <Row className="mt-4">
           <Col md="6">
@@ -57,9 +57,9 @@ function AboutPage() {
           <Col md="6">
             <motion.div
               className="img_Container mt-2"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              whileInView={{ scale: 1 }}
+              initial={{ scale: 0 }}
+              transition={{ duration: 0.7 }}
             >
               <div className="b1 img-fluid text-right">
                 <img
@@ -88,9 +88,9 @@ function AboutPage() {
           <Col md="6">
             <motion.div
               className="img_Container mt-2"
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              whileInView={{ scale: 1 }}
+              initial={{ scale: 0 }}
+              transition={{ duration: 0.7 }}
             >
               <div className=" b1 img-fluid text-right">
                 <img
@@ -159,9 +159,9 @@ function AboutPage() {
           <Col md="6">
             <motion.div
               className="img_Container mt-2"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
+              whileInView={{ scale: 1 }}
+              initial={{ scale: 0 }}
+              transition={{ duration: 0.7 }}
             >
               <div className=" b1 img-fluid text-right">
                 <img

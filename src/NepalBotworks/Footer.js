@@ -27,7 +27,7 @@ function Footer() {
                   />
                 </span>
               </div>{" "}
-              <div className="info_social">
+              <div className="info_social ">
                 <a
                   href="https://www.facebook.com/profile.php?id=61557855965257"
                   target="_blank"
@@ -100,7 +100,7 @@ function Footer() {
                     href="faq"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white link"
+                    className="text-white link mb-3"
                   >
                     FAQ
                   </a>
@@ -120,7 +120,7 @@ function Footer() {
 
               <h6 className="text-white">info.nepalbotworks@gmail.com</h6>
 
-              <div className="info_social mt-4">
+              <div className="info_social mt-4 mb-3">
                 <span className="text-subheading text-white  mb-3">
                   Useful Links
                 </span>

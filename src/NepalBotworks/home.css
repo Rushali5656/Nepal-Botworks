@@ -313,3 +313,48 @@
   height: 3px;
   background-color: rgb(226, 8, 20);
 }
+
+/* custom-navbar.css */
+
+.custom-navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.custom-navbar .nav-link.active {
+  font-weight: bold;
+}
+
+.custom-navbar .navbar-brand span {
+  color: red;
+}
+
+/* Ensure toggle button is visible on small screens */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2876, 76, 76, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Adjust navbar-brand for small screens */
+@media (max-width: 576px) {
+  .custom-navbar .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .custom-navbar .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .custom-navbar .ms-5 {
+    margin-left: 1rem !important;
+  }
+}

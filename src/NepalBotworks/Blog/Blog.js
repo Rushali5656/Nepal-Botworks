@@ -54,7 +54,7 @@ const BlogPage = () => {
             </h2>
           </Col>
         </Row>
-        <Row>
+        <Row className="mx-1">
           {messages.map((message) => (
             <p key={message.id}>
               <Card className="blog-card">
@@ -92,7 +92,7 @@ const BlogPage = () => {
               Recent Blog Posts
             </h2>
           </Col>
-          <Col md={4} className="mt-3 mb-3 mx-3">
+          <Col md={4} className="mt-3 mb-3">
             <h4 className="text-muted">No Blog Posts Yet</h4>
           </Col>
         </Row>

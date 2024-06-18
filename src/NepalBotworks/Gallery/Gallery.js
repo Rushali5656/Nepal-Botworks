@@ -137,7 +137,9 @@ const Gallery = () => {
         {/* <h2 className=" text-heading text-start services-heading">Gallery</h2> */}
         <Row>
           <Col lg={12}>
-            <h2 className="  text-subheading text-start ">Photos</h2>
+            <h2 className="  text-subheading services-heading text-start ">
+              Photos
+            </h2>
 
             <div className="text-start mt-3">
               <ul
@@ -148,11 +150,9 @@ const Gallery = () => {
                   <Button
                     to="#"
                     onClick={() => setCategory("All")}
-                    className={
-                      displayCategory === "All"
-                        ? "categories active"
-                        : "categories"
-                    }
+                    className={`categories ${
+                      displayCategory === "All" ? "active" : ""
+                    } mt-2`}
                     data-filter="*"
                   >
                     <div
@@ -169,11 +169,11 @@ const Gallery = () => {
                   <Button
                     to="#"
                     onClick={() => setCategory("Greenland Workshop")}
-                    className={
+                    className={`categories ${
                       displayCategory === "Greenland Workshop"
                         ? "categories active"
                         : "categories"
-                    }
+                    } mt-2`}
                     data-filter=".Greenland Workshop"
                   >
                     <div
@@ -191,11 +191,11 @@ const Gallery = () => {
                   <Button
                     to="#"
                     onClick={() => setCategory("Bal Uddhar Workshop")}
-                    className={
+                    className={`categories ${
                       displayCategory === "Bal Uddhar Workshop"
                         ? "categories active"
                         : "categories"
-                    }
+                    } mt-2npm `}
                     data-filter=".Bal Uddhar Workshop"
                   >
                     <div
@@ -296,7 +296,9 @@ const Gallery = () => {
             </Row>
           </Col>
         </Row>
-        <h2 className="mt-3 text-subheading text-start ">Video</h2>
+        <h2 className="mt-3 text-subheading text-start services-heading">
+          Video
+        </h2>
 
         <Row className="mt-3">
           {video.map((video, index) => (

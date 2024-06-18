@@ -28,8 +28,6 @@ import Footer from "NepalBotworks/Footer";
 import { EmbeddedVideo, FacebookProvider } from "react-facebook";
 
 const Gallery = () => {
-  document.title = "Gallery | Velzon - React Admin & Dashboard Template";
-
   const [displayCategory, setCategory] = useState("All");
   const [toggle, setToggle] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -195,7 +193,7 @@ const Gallery = () => {
                       displayCategory === "Bal Uddhar Workshop"
                         ? "categories active"
                         : "categories"
-                    } mt-2npm `}
+                    } mt-2`}
                     data-filter=".Bal Uddhar Workshop"
                   >
                     <div

@@ -60,8 +60,5 @@
     "static/media/github.svg": "/static/media/github.f7165d3e2844ef758a22c6829f494e71.svg",
     "index.html": "/index.html"
   },
-  "entrypoints": [
-    "static/css/main.446b4328.css",
-    "static/js/main.d9b9850f.js"
-  ]
+  "entrypoints": ["static/css/main.446b4328.css", "static/js/main.309d76d2.js"]
 }

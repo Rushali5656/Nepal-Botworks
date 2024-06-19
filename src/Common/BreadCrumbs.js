@@ -7,7 +7,7 @@ import "../Common/breadcrumb.css";
 const Breadcrumbs = ({ items }) => {
   return (
     <Breadcrumb className=" custom-breadcrumb ">
-      <Container>
+      <Container className="px-3">
         <div className="d-flex gap 2">
           {items.map((item, index) => (
             <BreadcrumbItem key={index} active={index === items.length - 1}>

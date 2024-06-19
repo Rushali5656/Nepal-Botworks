@@ -1,18 +1,11 @@
-import React, { useState } from "react";
-import {
-  Button,
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Modal,
-  ModalBody,
-  Row,
-} from "reactstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Card, Col, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
-import logo from "assets/img/logo.jpg";
-import image2 from "assets/img/image2.jpg";
-import image3 from "assets/img/image3.png";
+import { motion } from "framer-motion";
+import Breadcrumbs from "Common/BreadCrumbs";
+import CustomNavbar from "NepalBotworks/Navbar";
+import Footer from "NepalBotworks/Footer";
+import { EmbeddedVideo, FacebookProvider } from "react-facebook";
 import Greenland from "assets/img/Greenland Workshop.jpg";
 import Greenland1 from "assets/img/Greeland1.jpg";
 import Greenland3 from "assets/img/Greenland5.jpg";
@@ -20,32 +13,23 @@ import Greenland4 from "assets/img/Greenland2.jpg";
 import BalUddhar from "assets/img/Bal Uddhar.jpg";
 import BalUddhar1 from "assets/img/Bal Uddhar1.jpg";
 import BalUddhar2 from "assets/img/Bal Uddhar2.jpg";
-
-import { motion } from "framer-motion";
-import Breadcrumbs from "Common/BreadCrumbs";
-import CustomNavbar from "NepalBotworks/Navbar";
-import Footer from "NepalBotworks/Footer";
-import { EmbeddedVideo, FacebookProvider } from "react-facebook";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 const Gallery = () => {
   const [displayCategory, setCategory] = useState("All");
-  const [toggle, setToggle] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
-  const toggleModal = () => {
-    setToggle(!toggle);
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const openModal = (image) => {
-    setSelectedImage(image);
-    toggleModal();
-  };
   const gallery = [
     {
       src: Greenland,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -55,7 +39,6 @@ const Gallery = () => {
       src: Greenland4,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -65,7 +48,6 @@ const Gallery = () => {
       src: Greenland1,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
@@ -75,18 +57,15 @@ const Gallery = () => {
       src: Greenland3,
       altText: "Where Learning is Limitless",
       caption: `Inspiring Minds, Shaping Futures`,
-      // title: "Working at a coffee shop",
       auther: "Nancy Martino",
       likes: "2.2K",
       comments: "1.3K",
       category: "Greenland Workshop",
     },
-
     {
       src: BalUddhar,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
@@ -96,7 +75,6 @@ const Gallery = () => {
       src: BalUddhar1,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
@@ -106,13 +84,13 @@ const Gallery = () => {
       src: BalUddhar2,
       altText: "Commitment to Excellence in Education",
       caption: `Nurturing Potential, Achieving Success`,
-      // title: "Greenland Workshop discussion with team",
       auther: "Ruby Griffin",
       likes: "2.2K",
       comments: "1.3K",
       category: "Bal Uddhar Workshop",
     },
   ];
+
   const video = [
     {
       link: "https://www.facebook.com/reel/1580562855853365",
@@ -125,20 +103,69 @@ const Gallery = () => {
     },
   ];
 
+  const filteredGallery = gallery.filter(
+    ({ category }) => displayCategory === category || displayCategory === "All"
+  );
+
+  const handleImageClick = (index) => {
+    setPhotoIndex(index);
+    setIsOpen(true);
+  };
+
+  const ScrollToTopButton = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", toggleVisibility);
+      return () => {
+        window.removeEventListener("scroll", toggleVisibility);
+      };
+    }, []);
+    return (
+      <Button
+        color="primary"
+        onClick={scrollToTop}
+        style={{
+          position: "fixed",
+          bottom: "50px",
+          right: "50px",
+          display: isVisible ? "inline" : "none",
+          zIndex: 1000,
+        }}
+      >
+        ↑
+      </Button>
+    );
+  };
+
   return (
     <React.Fragment>
+      <ScrollToTopButton />
       <CustomNavbar />
       <Breadcrumbs
         items={[{ title: "Home", link: "/home" }, { title: "Gallery" }]}
-      />{" "}
+      />
       <Container>
-        {/* <h2 className=" text-heading text-start services-heading">Gallery</h2> */}
         <Row>
           <Col lg={12}>
-            <h2 className="  text-subheading services-heading text-start ">
+            <h2 className="text-subheading services-heading text-start">
               Photos
             </h2>
-
             <div className="text-start mt-3">
               <ul
                 className="list-inline categories-filter animation-nav"
@@ -153,12 +180,7 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter="*"
                   >
-                    <div
-                      style={{
-                        color: "rgb(134,53,3)",
-                        fontWeight: "bold",
-                      }}
-                    >
+                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
                       All
                     </div>
                   </Button>
@@ -174,13 +196,7 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter=".Greenland Workshop"
                   >
-                    <div
-                      style={{
-                        color: "rgb(134,53,3)",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {" "}
+                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
                       Greenland Workshop
                     </div>
                   </Button>
@@ -196,69 +212,17 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter=".Bal Uddhar Workshop"
                   >
-                    <div
-                      style={{
-                        color: "rgb(134,53,3)",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {" "}
+                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
                       Bal Uddhar Workshop
                     </div>
                   </Button>
                 </li>
-                {/* <li className="list-inline-item">
-                  <Button
-                    to="#"
-                    onClick={() => setCategory("Programs")}
-                    className={
-                      displayCategory === "Programs"
-                        ? "categories active"
-                        : "categories"
-                    }
-                    data-filter=".Programs"
-                  >
-                    <div
-                      style={{
-                        color: "rgb(134,53,3)",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Programs
-                    </div>
-                  </Button>
-                </li> */}
-                {/* <li className="list-inline-item">
-                  <Button
-                    to="#"
-                    onClick={() => setCategory("Tour")}
-                    className={
-                      displayCategory === "Tour"
-                        ? "categories active"
-                        : "categories"
-                    }
-                    data-filter=".Tour"
-                  >
-                    <div
-                      style={{
-                        color: "rgb(134,53,3)",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      Tour
-                    </div>
-                  </Button>
-                </li> */}
               </ul>
             </div>
 
             <Row className="gallery-wrapper">
-              {gallery
-                .filter(
-                  ({ category }) =>
-                    displayCategory === category || displayCategory === "All"
-                )
-                .map(({ src, title, auther, likes, comments }, key) => (
+              {filteredGallery.map(
+                ({ src, title, auther, likes, comments }, key) => (
                   <Col
                     xxl={3}
                     xl={4}
@@ -277,27 +241,30 @@ const Gallery = () => {
                               className="gallery-img img-fluid w-100 mx-auto rounded"
                               src={src}
                               alt=""
-                              onClick={() => openModal(src)}
-                              style={{ height: "300px" }}
+                              onClick={() => handleImageClick(key)}
+                              style={{ height: "300px", objectFit: "cover" }}
                             />
                             {/* <div className="gallery-overlay">
-                              <h5 className="overlay-caption">
-                                <div className="text-center p-2">{title}</div>
-                              </h5>
+                              <div className="overlay-caption text-center p-2">
+                                <p>{title}</p>
+                                <p>{auther}</p>
+                                <p>{likes} Likes</p>
+                                <p>{comments} Comments</p>
+                              </div>
                             </div> */}
                           </Link>
                         </div>
                       </Card>
                     </motion.div>
                   </Col>
-                ))}
+                )
+              )}
             </Row>
           </Col>
         </Row>
         <h2 className="mt-3 text-subheading text-start services-heading">
           Video
         </h2>
-
         <Row className="mt-3">
           {video.map((video, index) => (
             <Col lg={4} key={index} className="mb-3">
@@ -308,27 +275,46 @@ const Gallery = () => {
           ))}
         </Row>
       </Container>
-      <Modal
-        isOpen={toggle}
-        toggle={toggleModal}
-        size="xl"
-        className="modal-dialog-centered"
-      >
-        <ModalBody className="position-relative">
-          <button
-            type="button"
-            className="btn-close position-absolute top-0 end-0 m-3"
-            onClick={toggleModal}
-          >
-            <span aria-hidden="true">Back</span>
-          </button>
-          <img
-            src={selectedImage}
-            alt="Selected"
-            className="img-fluid modal-image-cover"
+
+      {isOpen && (
+        <div>
+          <Lightbox
+            mainSrc={filteredGallery[photoIndex].src}
+            nextSrc={
+              filteredGallery[(photoIndex + 1) % filteredGallery.length].src
+            }
+            prevSrc={
+              filteredGallery[
+                (photoIndex + filteredGallery.length - 1) %
+                  filteredGallery.length
+              ].src
+            }
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex(
+                (photoIndex + filteredGallery.length - 1) %
+                  filteredGallery.length
+              )
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % filteredGallery.length)
+            }
+            imageCaption={filteredGallery[photoIndex].caption}
           />
-        </ModalBody>
-      </Modal>
+          <Button
+            color="primary"
+            onClick={() => setIsOpen(false)}
+            style={{
+              position: "fixed",
+              top: "100px",
+              left: "30px",
+              zIndex: 2000,
+            }}
+          >
+            Back
+          </Button>
+        </div>
+      )}
       <Footer />
     </React.Fragment>
   );

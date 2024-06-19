@@ -1,26 +1,74 @@
-import Footer from "NepalBotworks/Footer";
-import CustomNavbar from "NepalBotworks/Navbar";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { Button, Card, Col, Container, Row } from "reactstrap";
+import "../AboutPage/About.css";
 import photo1 from "../../assets/img/Teaching.jpeg";
 import photo from "../../assets/img/landing1.jpg";
 import photo3 from "../../assets/img/cauraousal.jpg";
-import { Col, Container, Row } from "reactstrap";
-import "../AboutPage/About.css";
 import { Link } from "react-router-dom";
+
+import { motion } from "framer-motion";
+import CustomNavbar from "NepalBotworks/Navbar";
 import Breadcrumbs from "Common/BreadCrumbs";
+import Footer from "NepalBotworks/Footer";
+
+const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  return (
+    <Button
+      color="primary"
+      onClick={scrollToTop}
+      style={{
+        position: "fixed",
+        bottom: "50px",
+        right: "50px",
+        display: isVisible ? "inline" : "none",
+        zIndex: 1000,
+      }}
+    >
+      ↑
+    </Button>
+  );
+};
+
 function AboutPage() {
   const hoverShadowStyle = {
     boxShadow: "0 0 15px rgb(134,53,3)",
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
+      <ScrollToTopButton />
       <CustomNavbar />
       <Breadcrumbs
         items={[{ title: "Home", link: "/home" }, { title: "About Us" }]}
       />
-
       <Container>
         <h2 className="mt-4 abouttext-heading text-center">
           Our mission is to revolutionize the world of practical education by
@@ -65,7 +113,7 @@ function AboutPage() {
                 <img
                   src={photo1}
                   alt="Teaching"
-                  className="d-block img-fluid w-100"
+                  className="rounded-circle img-fluid"
                   style={{
                     height: "auto",
                     maxHeight: "300px",
@@ -92,11 +140,11 @@ function AboutPage() {
               initial={{ scale: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <div className=" b1 img-fluid text-right">
+              <div className="b1 img-fluid text-right">
                 <img
                   src={photo3}
                   alt="Teaching"
-                  className="d-block img-fluid w-100"
+                  className="rounded-circle img-fluid"
                   style={{
                     height: "auto",
                     maxHeight: "300px",
@@ -163,11 +211,11 @@ function AboutPage() {
               initial={{ scale: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <div className=" b1 img-fluid text-right">
+              <div className="b1 img-fluid text-right">
                 <img
                   src={photo1}
                   alt="Teaching"
-                  className="d-block img-fluid w-100"
+                  className="rounded-circle img-fluid"
                   style={{
                     height: "auto",
                     maxHeight: "300px",

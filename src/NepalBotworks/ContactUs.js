@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Col, Container, Input, Row } from "reactstrap";
 
 function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="px-3 px-md-5">
       <Container>

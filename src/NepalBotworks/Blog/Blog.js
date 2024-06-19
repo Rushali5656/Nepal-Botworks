@@ -1,6 +1,4 @@
-import React from "react";
-import Footer from "NepalBotworks/Footer";
-import CustomNavbar from "NepalBotworks/Navbar";
+import React, { useEffect, useState } from "react";
 import {
   Container,
   Row,
@@ -9,14 +7,16 @@ import {
   CardBody,
   CardTitle,
   CardText,
+  Button, // Import Button from reactstrap
 } from "reactstrap";
 import suman from "../../assets/img/suman.jpg";
 import suraj from "../../assets/img/suraj.jpg";
 import deen from "../../assets/img/deen.png";
 import { motion } from "framer-motion";
 import "../Blog/Blog.css";
-
+import CustomNavbar from "NepalBotworks/Navbar";
 import Breadcrumbs from "Common/BreadCrumbs";
+import Footer from "NepalBotworks/Footer";
 
 const BlogPage = () => {
   const messages = [
@@ -40,8 +40,55 @@ const BlogPage = () => {
     },
   ];
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const ScrollToTopButton = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", toggleVisibility);
+      return () => {
+        window.removeEventListener("scroll", toggleVisibility);
+      };
+    }, []);
+
+    return (
+      <Button
+        color="primary"
+        onClick={scrollToTop}
+        style={{
+          position: "fixed",
+          bottom: "50px",
+          right: "50px",
+          display: isVisible ? "inline" : "none",
+          zIndex: 1000,
+        }}
+      >
+        ↑
+      </Button>
+    );
+  };
+
   return (
     <>
+      <ScrollToTopButton />
       <CustomNavbar />
       <Breadcrumbs
         items={[{ title: "Home", link: "/home" }, { title: "Blog" }]}
@@ -56,34 +103,32 @@ const BlogPage = () => {
         </Row>
         <Row className="mx-1">
           {messages.map((message) => (
-            <p key={message.id}>
-              <Card className="blog-card">
-                <div className="text-center">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <img
-                      src={message.img}
-                      alt=""
-                      className="rounded-circle avatar-md mx-auto d-block img-fluid mb-4 mt-4"
-                      style={{ height: "300px", width: "300px" }}
-                    />
-                  </motion.div>
+            <Card className="blog-card">
+              <div className="text-center">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <img
+                    src={message.img}
+                    alt=""
+                    className="rounded-circle avatar-md mx-auto d-block img-fluid mb-4 mt-4"
+                    style={{ height: "300px", width: "300px" }}
+                  />
+                </motion.div>
+              </div>
+              <CardBody>
+                <CardTitle tag="h4" className="text-subheading">
+                  Message from {message.name}
+                </CardTitle>
+                <CardText>{message.info}</CardText>
+                <div className="text-center pt-3">
+                  <strong>Best Regards</strong>
+                  <div className="text-bold">{message.name}</div>
+                  <div>Co-Founder</div>
                 </div>
-                <CardBody>
-                  <CardTitle tag="h4" className="text-subheading">
-                    Message from {message.name}
-                  </CardTitle>
-                  <CardText>{message.info}</CardText>
-                  <div className="text-center pt-3">
-                    <strong>Best Regards</strong>
-                    <div className="text-bold">{message.name}</div>
-                    <div>Co-Founder</div>
-                  </div>
-                </CardBody>
-              </Card>
-            </p>
+              </CardBody>
+            </Card>
           ))}
         </Row>
         <Row>

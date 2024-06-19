@@ -113,11 +113,12 @@ function AboutPage() {
                 <img
                   src={photo1}
                   alt="Teaching"
-                  className="rounded-circle img-fluid"
+                  className=" img-fluid"
                   style={{
-                    height: "auto",
-                    maxHeight: "300px",
+                    width: "100%",
+                    height: "300px",
                     objectFit: "cover",
+                    aspectRatio: "1 / 1", // Set to 1:1 aspect ratio (square)
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow =
@@ -144,11 +145,12 @@ function AboutPage() {
                 <img
                   src={photo3}
                   alt="Teaching"
-                  className="rounded-circle img-fluid"
+                  className=" img-fluid"
                   style={{
-                    height: "auto",
-                    maxHeight: "300px",
+                    width: "100%",
+                    height: "300px",
                     objectFit: "cover",
+                    aspectRatio: "1 / 1", // Set to 1:1 aspect ratio (square)
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow =
@@ -215,11 +217,12 @@ function AboutPage() {
                 <img
                   src={photo1}
                   alt="Teaching"
-                  className="rounded-circle img-fluid"
+                  className=" img-fluid"
                   style={{
-                    height: "auto",
-                    maxHeight: "300px",
+                    width: "100%",
+                    height: "300px",
                     objectFit: "cover",
+                    aspectRatio: "1 / 1", // Set to 1:1 aspect ratio (square)
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.boxShadow =

@@ -1,10 +1,13 @@
 import Breadcrumbs from "Common/BreadCrumbs";
 import Footer from "NepalBotworks/Footer";
 import CustomNavbar from "NepalBotworks/Navbar";
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Col, Container, Input, Row } from "reactstrap";
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <CustomNavbar />

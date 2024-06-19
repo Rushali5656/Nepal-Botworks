@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nepal-Botworks/static/css/main.414f5bc6.css",
-    "main.js": "/Nepal-Botworks/static/js/main.c6c69916.js",
+    "main.css": "/Nepal-Botworks/static/css/main.8e91ef90.css",
+    "main.js": "/Nepal-Botworks/static/js/main.a33d694c.js",
     "static/media/rus.png": "/Nepal-Botworks/static/media/rus.dacd23cc44abb8ffd17a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Nepal-Botworks/static/media/fontawesome-webfont.6878d55e3615ccf40c38.svg",
     "static/media/Greeland1.jpg": "/Nepal-Botworks/static/media/Greeland1.cf3d0876076759881ab3.jpg",
@@ -61,7 +61,7 @@
     "index.html": "/Nepal-Botworks/index.html"
   },
   "entrypoints": [
-    "static/css/main.414f5bc6.css",
-    "static/js/main.c6c69916.js"
+    "static/css/main.8e91ef90.css",
+    "static/js/main.a33d694c.js"
   ]
 }

@@ -271,6 +271,9 @@ class DemoNavbar extends React.Component {
                         Download
                       </span>
                     </Button>
+                    <a href="/home">
+                      <button>Hello</button>
+                    </a>{" "}
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>

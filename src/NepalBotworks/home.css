@@ -95,6 +95,9 @@
   padding: 60px 0;
   background-color: #f8f9fa;
 }
+.img {
+  max-height: 350px;
+}
 
 .about_section .detail_box {
   margin-top: 20px;
@@ -278,8 +281,7 @@
 .text-heading {
   color: rgb(21, 63, 102);
   font-weight: 550;
-  font-size: 40px;
-  
+  font-size: 30px;
 }
 .text-subheading {
   color: rgb(21, 63, 102);

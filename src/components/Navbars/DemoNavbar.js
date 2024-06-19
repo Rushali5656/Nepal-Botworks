@@ -38,6 +38,7 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
+import Home from "NepalBotworks/Home";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {

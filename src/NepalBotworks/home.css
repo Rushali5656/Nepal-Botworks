@@ -5,7 +5,7 @@
 .hero_area {
   /* background: url("../images/hero-bg.jpg") no-repeat center center; */
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .header_section {
@@ -229,8 +229,7 @@
 .nav-link:hover {
   color: white !important;
   background-color: rgb(21, 63, 102);
-  border-radius: 35px;
-  padding: 8px;
+  border-radius: 40px;
 }
 
 .nav-link.active {
@@ -240,6 +239,9 @@
 
 .nav-link.active:hover {
   color: white !important;
+}
+.justify-content {
+  text-align: justify;
 }
 
 .slider_section {
@@ -382,4 +384,7 @@
   border-radius: 50%;
   background-color: #e4405f;
   border: 1px solid #e4405f;
+}
+.top {
+  padding-top: 50px !important;
 }

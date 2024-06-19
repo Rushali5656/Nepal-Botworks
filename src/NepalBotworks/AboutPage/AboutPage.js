@@ -87,7 +87,7 @@ function AboutPage() {
         />
         <Row className="mt-4">
           <Col md="6">
-            <p className="text-dark">
+            <p className="text-dark justify-content">
               We're a leading provider of cutting-edge technology education and
               IT services. From robotics and IoT training to drone technology
               and AI/ML expertise, we empower students and businesses alike to
@@ -164,7 +164,7 @@ function AboutPage() {
             </motion.div>
           </Col>
           <Col md="6">
-            <p className="text-dark">
+            <p className="text-dark justify-content">
               Through hands-on learning experiences tailored to the needs of
               each student, we pave the way for the next generation of tech
               leaders. Together, let's redefine education, turning classrooms
@@ -186,7 +186,7 @@ function AboutPage() {
 
         <Row className="mt-5 mb-5">
           <Col md="6">
-            <p className="text-dark">
+            <p className="text-dark justify-content">
               Join our community and unlock the boundless potential of
               tomorrow's technologists today! With our dedicated team of mentors
               and state-of-the-art resources, we ensure a supportive environment

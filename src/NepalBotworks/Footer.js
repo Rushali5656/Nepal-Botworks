@@ -192,7 +192,7 @@ function Footer() {
       <footer className="Container-fluid footer_section">
         <Container>
           <Row>
-            <Col lg="7" md="9" className="mx-auto">
+            <Col lg="7" md="9" className="mx-auto mt-2">
               <p>
                 &copy; 2024 All Rights Reserved By &nbsp;
                 <a href="/home" target="_blank" rel="noopener noreferrer">

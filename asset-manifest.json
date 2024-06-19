@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.446b4328.css",
-    "main.js": "/static/js/main.d9b9850f.js",
+    "main.js": "/static/js/main.7406c9a6.js",
     "static/media/rus.png": "/static/media/rus.dacd23cc44abb8ffd17a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.6878d55e3615ccf40c38.svg",
     "static/media/Greeland1.jpg": "/static/media/Greeland1.cf3d0876076759881ab3.jpg",
@@ -62,6 +62,6 @@
   },
   "entrypoints": [
     "static/css/main.446b4328.css",
-    "static/js/main.d9b9850f.js"
+    "static/js/main.7406c9a6.js"
   ]
 }

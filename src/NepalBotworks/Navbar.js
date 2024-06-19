@@ -25,17 +25,18 @@ function CustomNavbar() {
   const toggleNavbar = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md" sticky="top">
+    <Navbar color="lighter" light expand="md" >
       <Container>
-        <NavbarBrand href="/">
-          <Link to="/home">
             <img
               src={Botwork}
               alt="Nepal Botworks"
               className="img-fluid"
-              style={{ height: "60px", width: "63px" }}
+              style={{ height: "40px" }}
             />
-            <span className="text-heading fs-12">Nepal</span>{" "}
+        <NavbarBrand href="/">
+          <Link to="/home">
+           
+            <span className="text-heading fs-12 pl-3">Nepal</span>{" "}
             <span className="text-red fs-12">Botworks</span>
           </Link>
         </NavbarBrand>
@@ -119,7 +120,8 @@ function CustomNavbar() {
                 </UncontrolledDropdown>
               </Nav>
             </NavItem>
-            <div className="info_social ms-2 mt-3">
+          </Nav>
+            <div className="info_social ms-2">
               <span className="mx-1">
                 <a
                   href="https://www.facebook.com/profile.php?id=61557855965257"
@@ -173,7 +175,6 @@ function CustomNavbar() {
                 </a>
               </span>
             </div>
-          </Nav>
         </Collapse>
       </Container>
     </Navbar>

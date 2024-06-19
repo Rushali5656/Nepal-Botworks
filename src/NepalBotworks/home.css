@@ -276,7 +276,8 @@
 .text-heading {
   color: rgb(21, 63, 102);
   font-weight: 550;
-  font-size: 30px;
+  font-size: 40px;
+  
 }
 .text-subheading {
   color: rgb(21, 63, 102);
@@ -294,11 +295,7 @@
 .link {
   text-decoration: underline rgb(12, 95, 173);
 }
-.img {
-  max-height: 350px;
-  /* max-width: 300px; */
-  border-style: rgb(60, 60, 146) 25px;
-}
+
 .services-heading {
   position: relative;
   display: inline-block;

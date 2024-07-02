@@ -23,7 +23,7 @@ function Service() {
       title: "IoT Training",
       image: IoT,
       description:
-        "Elevate your students' potential with dynamic IoT training, equipping them with the skills needed to thrive in the connected world of tomorrow.",
+        "Elevate your student's potential with dynamic IoT training, equipping them with the skills needed to thrive in the connected world of tomorrow.",
     },
     {
       id: 3,
@@ -76,7 +76,9 @@ function Service() {
                   </div>
 
                   <div className="detail-box mt-2">
-                    <h5 className="text-subheading">{service.title}</h5>
+                    <h5 className="text-subheading justify-content">
+                      {service.title}
+                    </h5>
                     <p>{service.description}</p>
                   </div>
                 </Card>

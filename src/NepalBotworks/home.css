@@ -5,7 +5,7 @@
 .hero_area {
   /* background: url("../images/hero-bg.jpg") no-repeat center center; */
   background-size: cover;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .header_section {
@@ -94,9 +94,6 @@
 .about_section {
   padding: 60px 0;
   background-color: #f8f9fa;
-}
-.img {
-  max-height: 350px;
 }
 
 .about_section .detail_box {
@@ -232,7 +229,8 @@
 .nav-link:hover {
   color: white !important;
   background-color: rgb(21, 63, 102);
-  border-radius: 40px;
+  border-radius: 35px;
+  padding: 8px;
 }
 
 .nav-link.active {
@@ -242,9 +240,6 @@
 
 .nav-link.active:hover {
   color: white !important;
-}
-.justify-content {
-  text-align: justify;
 }
 
 .slider_section {
@@ -281,7 +276,8 @@
 .text-heading {
   color: rgb(21, 63, 102);
   font-weight: 550;
-  font-size: 30px;
+  font-size: 40px;
+  
 }
 .text-subheading {
   color: rgb(21, 63, 102);
@@ -386,7 +382,4 @@
   border-radius: 50%;
   background-color: #e4405f;
   border: 1px solid #e4405f;
-}
-.top {
-  padding-top: 50px !important;
 }

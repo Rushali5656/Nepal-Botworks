@@ -19,7 +19,7 @@ function AboutUs() {
             </div>
             <Row>
               <Col md="6">
-                <p className="text-normal justify-content">
+                <p className="text-normal">
                   We're a leading provider of cutting-edge technology education
                   and IT services. From robotics and IoT training to drone
                   technology and AI/ML expertise, we empower students and

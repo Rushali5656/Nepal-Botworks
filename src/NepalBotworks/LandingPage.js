@@ -60,7 +60,6 @@ function LandingPage() {
           src={item.src}
           alt={item.altText}
           className="d-block w-100 rounded-circle h-50 mt-5 img img-fluid"
-          style={{ objectFit: "cover" }}
         />
         <CarouselCaption
           captionText={item.caption}
@@ -80,11 +79,13 @@ function LandingPage() {
   return (
     <section>
       <Card className="bg-grey">
-        <Container className="py-4">
+        <Container>
           <Row className="position-relative  pb-2" style={{ zIndex: 2 }}>
-            <Col md="6" lg={6} sm={12}>
-              <h1 className=" text-heading">Robotics Education Providers</h1>
-              <p className="text-normal fs-18 mt-2 justify-content">
+            <Col md="7" lg={7} sm={12}>
+              <h2 className="mt-3 text-heading">
+                Robotics Education Providers
+              </h2>
+              <p className="text-normal fs-18 mt-2">
                 Embark on a transformative journey with us, where the fusion of
                 robotics, coding, and engineering sparks innovation and ignites
                 curiosity. Through hands-on learning experiences tailored to the
@@ -106,7 +107,6 @@ function LandingPage() {
                 Enroll Now
               </Button>{" "}
             </Col>
-            <Col lg={1}></Col>
             <Col lg="5" md="5" sm={12} className=" text-right">
               <Carousel
                 activeIndex={activeIndex}

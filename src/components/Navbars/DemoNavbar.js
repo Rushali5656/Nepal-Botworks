@@ -38,7 +38,6 @@ import {
   Col,
   UncontrolledTooltip,
 } from "reactstrap";
-import Home from "NepalBotworks/Home";
 
 class DemoNavbar extends React.Component {
   componentDidMount() {
@@ -66,7 +65,7 @@ class DemoNavbar extends React.Component {
   render() {
     return (
       <>
-        {/* <header className="header-global">
+        <header className="header-global">
           <Navbar
             className="navbar-main navbar-transparent navbar-light headroom"
             expand="lg"
@@ -272,16 +271,12 @@ class DemoNavbar extends React.Component {
                         Download
                       </span>
                     </Button>
-                    <a href="/home">
-                      <button>Hello</button>
-                    </a>{" "}
                   </NavItem>
                 </Nav>
               </UncontrolledCollapse>
             </Container>
           </Navbar>
-        </header> */}
-        <Home />
+        </header>
       </>
     );
   }

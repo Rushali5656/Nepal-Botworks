@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b4335725.css",
-    "main.js": "/static/js/main.e3de4958.js",
+    "main.js": "/static/js/main.f4a1b7ef.js",
     "static/media/rus.png": "/static/media/rus.dacd23cc44abb8ffd17a.png",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/Greeland1.jpg": "/static/media/Greeland1.cf3d0876076759881ab3.jpg",
@@ -11,7 +11,6 @@
     "static/media/team-2-800x800.jpg": "/static/media/team-2-800x800.3e08ef145920c93bbe32.jpg",
     "static/media/Teaching.jpeg": "/static/media/Teaching.369a40f80276561adb2e.jpeg",
     "static/media/img-1-1200x1000.jpg": "/static/media/img-1-1200x1000.df1442cf520034feb3b0.jpg",
-    "static/media/img-2-1200x1000.jpg": "/static/media/img-2-1200x1000.78ce5ecad91906896cd1.jpg",
     "static/media/landing.jpg": "/static/media/landing.530e5e3e621fe49e8e46.jpg",
     "static/media/BESS.jpeg": "/static/media/BESS.7507a355f08077c9b8b6.jpeg",
     "static/media/Baluddar.jpg": "/static/media/Baluddar.99cacbbcf59e2bab44e9.jpg",
@@ -43,7 +42,6 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/crop.png": "/static/media/crop.17244a8b4a822006dbb7.png",
     "static/media/image2.jpg": "/static/media/image2.5b92a5cdb780252f04b9.jpg",
-    "static/media/creativetim-white-slim.png": "/static/media/creativetim-white-slim.c9b2f68e52151075edf1.png",
     "static/media/ml.png": "/static/media/ml.4468b47bfb400a69e350.png",
     "static/media/promo-1.png": "/static/media/promo-1.f39d32d244fa5beabbaf.png",
     "static/media/robot (1).png": "/static/media/robot (1).1e9deef021fddd828647.png",
@@ -62,6 +60,6 @@
   },
   "entrypoints": [
     "static/css/main.b4335725.css",
-    "static/js/main.e3de4958.js"
+    "static/js/main.f4a1b7ef.js"
   ]
 }

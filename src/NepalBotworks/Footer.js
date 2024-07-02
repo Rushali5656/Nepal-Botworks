@@ -61,7 +61,7 @@ function Footer() {
                 <span className="text-subheading text-white  mb-3">Menu</span>
                 <div>
                   <a
-                    href="/home"
+                    href="/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white link"
@@ -195,7 +195,7 @@ function Footer() {
             <Col lg="7" md="9" className="mx-auto mt-2">
               <p>
                 &copy; 2024 All Rights Reserved By &nbsp;
-                <a href="/home" target="_blank" rel="noopener noreferrer">
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   Nepal Botworks Pvt. Ltd.
                 </a>
               </p>

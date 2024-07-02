@@ -119,6 +119,9 @@
   height: auto;
   border-radius: 10px;
 }
+.img {
+  border-radius: 50%;
+}
 
 .blog_section {
   padding: 60px 0;

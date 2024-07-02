@@ -25,17 +25,16 @@ function CustomNavbar() {
   const toggleNavbar = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="lighter" light expand="md" >
+    <Navbar color="lighter" light expand="md">
       <Container>
-            <img
-              src={Botwork}
-              alt="Nepal Botworks"
-              className="img-fluid"
-              style={{ height: "40px" }}
-            />
+        <img
+          src={Botwork}
+          alt="Nepal Botworks"
+          className="img-fluid"
+          style={{ height: "40px" }}
+        />
         <NavbarBrand href="/">
-          <Link to="/home">
-           
+          <Link to="/">
             <span className="text-heading fs-12 pl-3">Nepal</span>{" "}
             <span className="text-red fs-12">Botworks</span>
           </Link>
@@ -57,7 +56,7 @@ function CustomNavbar() {
             )}
             <NavItem>
               <NavLink
-                to="/home"
+                to="/"
                 className="nav-link"
                 activeClassName="active"
                 onClick={() => setIsOpen(false)}
@@ -121,60 +120,60 @@ function CustomNavbar() {
               </Nav>
             </NavItem>
           </Nav>
-            <div className="info_social ms-2">
-              <span className="mx-1">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61557855965257"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <img src={fb} alt="Facebook" className="social-icon-fb" />
-                </a>
-              </span>
-              <span className="mx-1">
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <img
-                    src={twitter}
-                    alt="Twitter"
-                    className="social-icon-twitter"
-                  />
-                </a>
-              </span>
-              <span className="mx-1">
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <img
-                    src={linkin}
-                    alt="LinkedIn"
-                    className="social-icon-linkedin"
-                  />
-                </a>
-              </span>
-              <span className="mx-1">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <img
-                    src={insta}
-                    alt="Instagram"
-                    className="social-icon-instagram"
-                  />
-                </a>
-              </span>
-            </div>
+          <div className="info_social ms-2">
+            <span className="mx-1">
+              <a
+                href="https://www.facebook.com/profile.php?id=61557855965257"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img src={fb} alt="Facebook" className="social-icon-fb" />
+              </a>
+            </span>
+            <span className="mx-1">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src={twitter}
+                  alt="Twitter"
+                  className="social-icon-twitter"
+                />
+              </a>
+            </span>
+            <span className="mx-1">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src={linkin}
+                  alt="LinkedIn"
+                  className="social-icon-linkedin"
+                />
+              </a>
+            </span>
+            <span className="mx-1">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <img
+                  src={insta}
+                  alt="Instagram"
+                  className="social-icon-instagram"
+                />
+              </a>
+            </span>
+          </div>
         </Collapse>
       </Container>
     </Navbar>

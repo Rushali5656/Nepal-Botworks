@@ -59,8 +59,8 @@ function LandingPage() {
         <img
           src={item.src}
           alt={item.altText}
-          className="d-block w-100 rounded-circle h-50 mt-5 img img-fluid"
-          style={{ objectFit: "cover" }}
+          className="d-block w-100 rounded-circle  mt-5 img img-fluid"
+          style={{ objectFit: "cover", height: "350px", width: "170px" }}
         />
         <CarouselCaption
           captionText={item.caption}

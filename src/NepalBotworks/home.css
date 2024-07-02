@@ -279,7 +279,6 @@
   color: rgb(21, 63, 102);
   font-weight: 550;
   font-size: 40px;
-  
 }
 .text-subheading {
   color: rgb(21, 63, 102);
@@ -288,7 +287,9 @@
 }
 .card-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer !important;
 }
+
 .text-normal {
   color: #000000;
   font-size: 16px;

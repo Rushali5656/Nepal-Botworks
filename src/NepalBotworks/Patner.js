@@ -54,7 +54,13 @@ function Patner() {
         <Row className="service_container mt-3">
           {partner.map((service) => (
             <Col md="4" key={service.id} className="box">
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div
+                className="img_Container mt-2"
+                whileInView={{ scale: 1 }}
+                initial={{ scale: 0 }}
+                transition={{ duration: 0.7 }}
+              >
+                {" "}
                 <a
                   href={service.link}
                   target="_blank"

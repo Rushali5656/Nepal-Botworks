@@ -6,7 +6,6 @@ import robot from "../assets/img/robot (1).png";
 import IoT from "../assets/img/internet-of-things.png";
 import drone from "../assets/img/drone.png";
 import website from "../assets/img/app-development.png";
-
 import { motion } from "framer-motion";
 
 function Service() {
@@ -64,12 +63,17 @@ function Service() {
         <Row className="service_container mt-3">
           {services.map((service) => (
             <Col md="4" key={service.id} className="box">
-              <motion.div whileHover={{ scale: 1.05 }}>
-                <Card className="p-1 px-4 mb-4 card-shadow">
+              <motion.div
+                className="img_Container mt-2 cursor-pointer"
+                whileInView={{ scale: 1 }}
+                initial={{ scale: 0 }}
+                transition={{ duration: 0.7 }}
+              >
+                <Card className="p-1 px-4 mb-4 card-shadow cursor-pointer">
                   <div className="img-box text-center mt-2 py-4">
                     <img
                       src={service.image}
-                      className="img-fluid img1 "
+                      className="img-fluid img1"
                       alt={service.title}
                       style={{ maxHeight: "100px", maxWidth: "100px" }}
                     />

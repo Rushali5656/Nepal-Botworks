@@ -65,6 +65,7 @@ class DemoNavbar extends React.Component {
   render() {
     return (
       <>
+<<<<<<< HEAD
         <header className="header-global">
           <Navbar
             className="navbar-main navbar-transparent navbar-light headroom"
@@ -277,6 +278,9 @@ class DemoNavbar extends React.Component {
             </Container>
           </Navbar>
         </header>
+=======
+        <Home/>
+>>>>>>> 50d38e507abb2f1a2b014e8e7f94e664046e6bca
       </>
     );
   }

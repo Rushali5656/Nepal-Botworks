@@ -158,7 +158,7 @@ const Gallery = () => {
       <ScrollToTopButton />
       <CustomNavbar />
       <Breadcrumbs
-        items={[{ title: "Home", link: "/home" }, { title: "Gallery" }]}
+        items={[{ title: "Home", link: "/" }, { title: "Gallery" }]}
       />
       <Container>
         <Row>

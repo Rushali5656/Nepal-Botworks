@@ -12,7 +12,7 @@ function Contact() {
     <div>
       <CustomNavbar />
       <Breadcrumbs
-        items={[{ title: "Home", link: "/home" }, { title: "Contact Us" }]}
+        items={[{ title: "Home", link: "/" }, { title: "Contact Us" }]}
       />
       <Container>
         {/* <h2 className="text-heading text-start services-heading">Contact Us</h2> */}

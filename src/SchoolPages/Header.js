@@ -44,7 +44,7 @@ function Header() {
 
         <Navbar expand="md" light>
           <Row className="p-0">
-            <NavbarBrand href="/home" className="nav p-3">
+            <NavbarBrand href="/" className="nav p-3">
               <img src="images/crop.png" alt="" />
             </NavbarBrand>
 
@@ -52,7 +52,7 @@ function Header() {
             <Collapse isOpen={isOpen} navbar>
               <Nav className="pl-0" navbar>
                 <NavItem>
-                  <NavLink href="/home">Home</NavLink>
+                  <NavLink href="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/about">About</NavLink>

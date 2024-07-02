@@ -42,9 +42,7 @@ function FAQ() {
   return (
     <div>
       <CustomNavbar />
-      <Breadcrumbs
-        items={[{ title: "Home", link: "/home" }, { title: "FAQ" }]}
-      />
+      <Breadcrumbs items={[{ title: "Home", link: "/" }, { title: "FAQ" }]} />
       <Container>
         <Col lg={12}>
           <div>

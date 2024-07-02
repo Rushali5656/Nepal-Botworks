@@ -90,9 +90,7 @@ const BlogPage = () => {
     <>
       <ScrollToTopButton />
       <CustomNavbar />
-      <Breadcrumbs
-        items={[{ title: "Home", link: "/home" }, { title: "Blog" }]}
-      />
+      <Breadcrumbs items={[{ title: "Home", link: "/" }, { title: "Blog" }]} />
       <Container>
         <Row>
           <Col md={12}>

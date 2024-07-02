@@ -67,7 +67,7 @@ function AboutPage() {
       <ScrollToTopButton />
       <CustomNavbar />
       <Breadcrumbs
-        items={[{ title: "Home", link: "/home" }, { title: "About Us" }]}
+        items={[{ title: "Home", link: "/" }, { title: "About Us" }]}
       />
       <Container>
         <h2 className="mt-4 abouttext-heading text-center">

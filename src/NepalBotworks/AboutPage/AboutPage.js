@@ -70,7 +70,7 @@ function AboutPage() {
         items={[{ title: "Home", link: "/" }, { title: "About Us" }]}
       />
       <Container>
-        <h2 className="mt-4 abouttext-heading text-center">
+        <h2 className="mt-4  text-center">
           Our mission is to revolutionize the world of practical education by
           integrating cutting-edge robotics technology. We aim to enhance the
           learning experience, making it more interactive, engaging, and

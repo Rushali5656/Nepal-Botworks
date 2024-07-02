@@ -180,7 +180,7 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter="*"
                   >
-                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
+                    <div style={{ color: "black", fontWeight: "bold" }}>
                       All
                     </div>
                   </Button>
@@ -196,7 +196,7 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter=".Greenland Workshop"
                   >
-                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
+                    <div style={{ color: "black", fontWeight: "bold" }}>
                       Greenland Workshop
                     </div>
                   </Button>
@@ -212,7 +212,7 @@ const Gallery = () => {
                     } mt-2`}
                     data-filter=".Bal Uddhar Workshop"
                   >
-                    <div style={{ color: "rgb(134,53,3)", fontWeight: "bold" }}>
+                    <div style={{ color: "black", fontWeight: "bold" }}>
                       Bal Uddhar Workshop
                     </div>
                   </Button>
